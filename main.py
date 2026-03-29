@@ -209,7 +209,7 @@ async def health_check():
 
 
 @app.get("/api/signals")
-async def get_signals():
+def get_signals():
     """Get signals — served from pre-cache (static or live)."""
     _cache_ready.wait(timeout=5)
     with _cache_lock:
@@ -217,7 +217,7 @@ async def get_signals():
 
 
 @app.get("/api/stock/{symbol}")
-async def get_stock_analysis(symbol: str):
+def get_stock_analysis(symbol: str):
     """Full multi-agent analysis for a single stock."""
     logger.info(f"Full analysis for {symbol}...")
 
@@ -239,7 +239,7 @@ async def get_stock_analysis(symbol: str):
 
 
 @app.get("/api/market-overview")
-async def get_market_overview():
+def get_market_overview():
     """Get NIFTY 50, SENSEX, BANK NIFTY data."""
     try:
         live = fetch_market_overview()
@@ -255,7 +255,7 @@ async def get_market_overview():
 
 
 @app.post("/api/chat")
-async def chat(request: ChatRequest):
+def chat(request: ChatRequest):
     """AI chat powered by Gemini 2.5 Flash."""
     logger.info(f"Chat: {request.message[:80]}...")
     try:
@@ -271,7 +271,7 @@ async def chat(request: ChatRequest):
 
 
 @app.post("/api/portfolio")
-async def get_portfolio_signals(request: PortfolioRequest):
+def get_portfolio_signals(request: PortfolioRequest):
     """Signals for user's portfolio."""
     try:
         signals = []
