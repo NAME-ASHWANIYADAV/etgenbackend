@@ -1,0 +1,1058 @@
+{
+  "HDFCBANK": {
+    "symbol": "HDFCBANK",
+    "name": "HDFC Bank",
+    "price": 757.95,
+    "change": -3.11,
+    "score": 54,
+    "chartData": [
+      {
+        "date": "Day 1",
+        "price": 100
+      },
+      {
+        "date": "Day 2",
+        "price": 101
+      },
+      {
+        "date": "Day 3",
+        "price": 102
+      },
+      {
+        "date": "Day 4",
+        "price": 103
+      },
+      {
+        "date": "Day 5",
+        "price": 104
+      },
+      {
+        "date": "Day 6",
+        "price": 105
+      },
+      {
+        "date": "Day 7",
+        "price": 106
+      },
+      {
+        "date": "Day 8",
+        "price": 107
+      },
+      {
+        "date": "Day 9",
+        "price": 108
+      },
+      {
+        "date": "Day 10",
+        "price": 109
+      },
+      {
+        "date": "Day 11",
+        "price": 110
+      },
+      {
+        "date": "Day 12",
+        "price": 111
+      },
+      {
+        "date": "Day 13",
+        "price": 112
+      },
+      {
+        "date": "Day 14",
+        "price": 113
+      },
+      {
+        "date": "Day 15",
+        "price": 114
+      },
+      {
+        "date": "Day 16",
+        "price": 115
+      },
+      {
+        "date": "Day 17",
+        "price": 116
+      },
+      {
+        "date": "Day 18",
+        "price": 117
+      },
+      {
+        "date": "Day 19",
+        "price": 118
+      },
+      {
+        "date": "Day 20",
+        "price": 119
+      },
+      {
+        "date": "Day 21",
+        "price": 120
+      },
+      {
+        "date": "Day 22",
+        "price": 121
+      },
+      {
+        "date": "Day 23",
+        "price": 122
+      },
+      {
+        "date": "Day 24",
+        "price": 123
+      },
+      {
+        "date": "Day 25",
+        "price": 124
+      },
+      {
+        "date": "Day 26",
+        "price": 125
+      },
+      {
+        "date": "Day 27",
+        "price": 126
+      },
+      {
+        "date": "Day 28",
+        "price": 127
+      },
+      {
+        "date": "Day 29",
+        "price": 128
+      },
+      {
+        "date": "Day 30",
+        "price": 129
+      }
+    ],
+    "agents": {
+      "technical": {
+        "rsi": 28,
+        "macd": "Bearish crossover",
+        "bollinger": "Price near lower band (potential reversal)",
+        "verdict": "Moderate bullish technical indicators"
+      },
+      "fundamental": {
+        "revenue": "Sector: Private Sector Bank",
+        "profit": "PE: 15.27",
+        "highlight": "52W Range: \u20b9741.05 \u2014 \u20b91020.5 | Sector PE: 15.09",
+        "verdict": "Decent fundamentals \u2014 Overvalued"
+      },
+      "insider": {
+        "recent": "No major bulk/block deals",
+        "holding": "Delivery: 64.03%",
+        "pledge": "N/A",
+        "verdict": "Moderate institutional activity"
+      },
+      "sentiment": {
+        "articles": 10,
+        "score": 0.35,
+        "theme": "Stock market open for only 3 days this week. Anand James on ",
+        "verdict": "Negative media tone (35% positive)"
+      },
+      "fusion": {
+        "convergence": "Mixed signals \u2014 1 bullish, 1 bearish, 2 neutral",
+        "backtest": "Mixed pattern \u2014 50/50 historically",
+        "confidence": 54,
+        "verdict": "HOLD \u2014 Mixed signals, wait for clearer direction"
+      }
+    },
+    "backtest": [
+      {
+        "days": 30,
+        "return": 5
+      },
+      {
+        "days": 60,
+        "return": 8
+      },
+      {
+        "days": 90,
+        "return": 12
+      }
+    ],
+    "successRate": 58
+  },
+  "RELIANCE": {
+    "symbol": "RELIANCE",
+    "name": "Reliance Industries",
+    "price": 1348.0,
+    "change": -4.61,
+    "score": 54,
+    "chartData": [
+      {
+        "date": "Day 1",
+        "price": 100
+      },
+      {
+        "date": "Day 2",
+        "price": 101
+      },
+      {
+        "date": "Day 3",
+        "price": 102
+      },
+      {
+        "date": "Day 4",
+        "price": 103
+      },
+      {
+        "date": "Day 5",
+        "price": 104
+      },
+      {
+        "date": "Day 6",
+        "price": 105
+      },
+      {
+        "date": "Day 7",
+        "price": 106
+      },
+      {
+        "date": "Day 8",
+        "price": 107
+      },
+      {
+        "date": "Day 9",
+        "price": 108
+      },
+      {
+        "date": "Day 10",
+        "price": 109
+      },
+      {
+        "date": "Day 11",
+        "price": 110
+      },
+      {
+        "date": "Day 12",
+        "price": 111
+      },
+      {
+        "date": "Day 13",
+        "price": 112
+      },
+      {
+        "date": "Day 14",
+        "price": 113
+      },
+      {
+        "date": "Day 15",
+        "price": 114
+      },
+      {
+        "date": "Day 16",
+        "price": 115
+      },
+      {
+        "date": "Day 17",
+        "price": 116
+      },
+      {
+        "date": "Day 18",
+        "price": 117
+      },
+      {
+        "date": "Day 19",
+        "price": 118
+      },
+      {
+        "date": "Day 20",
+        "price": 119
+      },
+      {
+        "date": "Day 21",
+        "price": 120
+      },
+      {
+        "date": "Day 22",
+        "price": 121
+      },
+      {
+        "date": "Day 23",
+        "price": 122
+      },
+      {
+        "date": "Day 24",
+        "price": 123
+      },
+      {
+        "date": "Day 25",
+        "price": 124
+      },
+      {
+        "date": "Day 26",
+        "price": 125
+      },
+      {
+        "date": "Day 27",
+        "price": 126
+      },
+      {
+        "date": "Day 28",
+        "price": 127
+      },
+      {
+        "date": "Day 29",
+        "price": 128
+      },
+      {
+        "date": "Day 30",
+        "price": 129
+      }
+    ],
+    "agents": {
+      "technical": {
+        "rsi": 28,
+        "macd": "Bearish crossover",
+        "bollinger": "Price within bands (normal range)",
+        "verdict": "Moderate bullish technical indicators"
+      },
+      "fundamental": {
+        "revenue": "Sector: Refineries & Marketing",
+        "profit": "PE: 18.72",
+        "highlight": "52W Range: \u20b91114.85 \u2014 \u20b91611.8 | Sector PE: 18.72",
+        "verdict": "Mixed fundamentals \u2014 needs deeper analysis"
+      },
+      "insider": {
+        "recent": "No major bulk/block deals",
+        "holding": "Delivery: 54.05%",
+        "pledge": "N/A",
+        "verdict": "Moderate institutional activity"
+      },
+      "sentiment": {
+        "articles": 7,
+        "score": 0.57,
+        "theme": "Mcap of 7 of top-10 most valued firms drops by Rs 1.75 lakh ",
+        "verdict": "Generally positive sentiment (56% positive)"
+      },
+      "fusion": {
+        "convergence": "Mixed signals \u2014 0 bullish, 0 bearish, 4 neutral",
+        "backtest": "Mixed pattern \u2014 50/50 historically",
+        "confidence": 54,
+        "verdict": "HOLD \u2014 Mixed signals, wait for clearer direction"
+      }
+    },
+    "backtest": [
+      {
+        "days": 30,
+        "return": 5
+      },
+      {
+        "days": 60,
+        "return": 8
+      },
+      {
+        "days": 90,
+        "return": 12
+      }
+    ],
+    "successRate": 58
+  },
+  "TCS": {
+    "symbol": "TCS",
+    "name": "TCS",
+    "price": 2387.5,
+    "change": 0.42,
+    "score": 61,
+    "chartData": [
+      {
+        "date": "Day 1",
+        "price": 100
+      },
+      {
+        "date": "Day 2",
+        "price": 101
+      },
+      {
+        "date": "Day 3",
+        "price": 102
+      },
+      {
+        "date": "Day 4",
+        "price": 103
+      },
+      {
+        "date": "Day 5",
+        "price": 104
+      },
+      {
+        "date": "Day 6",
+        "price": 105
+      },
+      {
+        "date": "Day 7",
+        "price": 106
+      },
+      {
+        "date": "Day 8",
+        "price": 107
+      },
+      {
+        "date": "Day 9",
+        "price": 108
+      },
+      {
+        "date": "Day 10",
+        "price": 109
+      },
+      {
+        "date": "Day 11",
+        "price": 110
+      },
+      {
+        "date": "Day 12",
+        "price": 111
+      },
+      {
+        "date": "Day 13",
+        "price": 112
+      },
+      {
+        "date": "Day 14",
+        "price": 113
+      },
+      {
+        "date": "Day 15",
+        "price": 114
+      },
+      {
+        "date": "Day 16",
+        "price": 115
+      },
+      {
+        "date": "Day 17",
+        "price": 116
+      },
+      {
+        "date": "Day 18",
+        "price": 117
+      },
+      {
+        "date": "Day 19",
+        "price": 118
+      },
+      {
+        "date": "Day 20",
+        "price": 119
+      },
+      {
+        "date": "Day 21",
+        "price": 120
+      },
+      {
+        "date": "Day 22",
+        "price": 121
+      },
+      {
+        "date": "Day 23",
+        "price": 122
+      },
+      {
+        "date": "Day 24",
+        "price": 123
+      },
+      {
+        "date": "Day 25",
+        "price": 124
+      },
+      {
+        "date": "Day 26",
+        "price": 125
+      },
+      {
+        "date": "Day 27",
+        "price": 126
+      },
+      {
+        "date": "Day 28",
+        "price": 127
+      },
+      {
+        "date": "Day 29",
+        "price": 128
+      },
+      {
+        "date": "Day 30",
+        "price": 129
+      }
+    ],
+    "agents": {
+      "technical": {
+        "rsi": 52,
+        "macd": "Bullish (above signal)",
+        "bollinger": "Price near lower band (potential reversal)",
+        "verdict": "Strong technical setup for upside move"
+      },
+      "fundamental": {
+        "revenue": "Sector: Computers - Software & Consulting",
+        "profit": "PE: 18.03",
+        "highlight": "52W Range: \u20b92348 \u2014 \u20b93710 | Sector PE: 16.83",
+        "verdict": "Decent fundamentals \u2014 Overvalued"
+      },
+      "insider": {
+        "recent": "No major bulk/block deals",
+        "holding": "Delivery: 48.8%",
+        "pledge": "N/A",
+        "verdict": "Moderate institutional activity"
+      },
+      "sentiment": {
+        "articles": 5,
+        "score": 0.6,
+        "theme": "Asian Paints, Berger Paints, Dabur, HUL, TCS : Are the famed",
+        "verdict": "Generally positive sentiment (60% positive)"
+      },
+      "fusion": {
+        "convergence": "2 agents bullish, 2 neutral",
+        "backtest": "This pattern \u2192 58% win rate in historical analysis",
+        "confidence": 61,
+        "verdict": "MODERATE BUY \u2014 Positive indicators with some caution"
+      }
+    },
+    "backtest": [
+      {
+        "days": 30,
+        "return": 5
+      },
+      {
+        "days": 60,
+        "return": 8
+      },
+      {
+        "days": 90,
+        "return": 12
+      }
+    ],
+    "successRate": 58
+  },
+  "INFY": {
+    "symbol": "INFY",
+    "name": "Infosys",
+    "price": 1267.5,
+    "change": -0.91,
+    "score": 54,
+    "chartData": [
+      {
+        "date": "Day 1",
+        "price": 100
+      },
+      {
+        "date": "Day 2",
+        "price": 101
+      },
+      {
+        "date": "Day 3",
+        "price": 102
+      },
+      {
+        "date": "Day 4",
+        "price": 103
+      },
+      {
+        "date": "Day 5",
+        "price": 104
+      },
+      {
+        "date": "Day 6",
+        "price": 105
+      },
+      {
+        "date": "Day 7",
+        "price": 106
+      },
+      {
+        "date": "Day 8",
+        "price": 107
+      },
+      {
+        "date": "Day 9",
+        "price": 108
+      },
+      {
+        "date": "Day 10",
+        "price": 109
+      },
+      {
+        "date": "Day 11",
+        "price": 110
+      },
+      {
+        "date": "Day 12",
+        "price": 111
+      },
+      {
+        "date": "Day 13",
+        "price": 112
+      },
+      {
+        "date": "Day 14",
+        "price": 113
+      },
+      {
+        "date": "Day 15",
+        "price": 114
+      },
+      {
+        "date": "Day 16",
+        "price": 115
+      },
+      {
+        "date": "Day 17",
+        "price": 116
+      },
+      {
+        "date": "Day 18",
+        "price": 117
+      },
+      {
+        "date": "Day 19",
+        "price": 118
+      },
+      {
+        "date": "Day 20",
+        "price": 119
+      },
+      {
+        "date": "Day 21",
+        "price": 120
+      },
+      {
+        "date": "Day 22",
+        "price": 121
+      },
+      {
+        "date": "Day 23",
+        "price": 122
+      },
+      {
+        "date": "Day 24",
+        "price": 123
+      },
+      {
+        "date": "Day 25",
+        "price": 124
+      },
+      {
+        "date": "Day 26",
+        "price": 125
+      },
+      {
+        "date": "Day 27",
+        "price": 126
+      },
+      {
+        "date": "Day 28",
+        "price": 127
+      },
+      {
+        "date": "Day 29",
+        "price": 128
+      },
+      {
+        "date": "Day 30",
+        "price": 129
+      }
+    ],
+    "agents": {
+      "technical": {
+        "rsi": 48,
+        "macd": "Bearish (below signal)",
+        "bollinger": "Price near lower band (potential reversal)",
+        "verdict": "Weak setup \u2014 bearish pressure building"
+      },
+      "fundamental": {
+        "revenue": "Sector: Computers - Software & Consulting",
+        "profit": "PE: 18.39",
+        "highlight": "52W Range: \u20b91215.1 \u2014 \u20b91728 | Sector PE: 17.82",
+        "verdict": "Decent fundamentals \u2014 Overvalued"
+      },
+      "insider": {
+        "recent": "No major bulk/block deals",
+        "holding": "Delivery: 50.82%",
+        "pledge": "N/A",
+        "verdict": "Moderate institutional activity"
+      },
+      "sentiment": {
+        "articles": 5,
+        "score": 0.7,
+        "theme": "Infosys announces acquisition of Optimum Healthcare IT, Stra",
+        "verdict": "Overwhelmingly positive coverage (70% positive)"
+      },
+      "fusion": {
+        "convergence": "Mixed signals \u2014 1 bullish, 1 bearish, 2 neutral",
+        "backtest": "Mixed pattern \u2014 50/50 historically",
+        "confidence": 54,
+        "verdict": "HOLD \u2014 Mixed signals, wait for clearer direction"
+      }
+    },
+    "backtest": [
+      {
+        "days": 30,
+        "return": 5
+      },
+      {
+        "days": 60,
+        "return": 8
+      },
+      {
+        "days": 90,
+        "return": 12
+      }
+    ],
+    "successRate": 58
+  },
+  "ITC": {
+    "symbol": "ITC",
+    "name": "ITC Limited",
+    "price": 294.55,
+    "change": -0.39,
+    "score": 54,
+    "chartData": [
+      {
+        "date": "Day 1",
+        "price": 100
+      },
+      {
+        "date": "Day 2",
+        "price": 101
+      },
+      {
+        "date": "Day 3",
+        "price": 102
+      },
+      {
+        "date": "Day 4",
+        "price": 103
+      },
+      {
+        "date": "Day 5",
+        "price": 104
+      },
+      {
+        "date": "Day 6",
+        "price": 105
+      },
+      {
+        "date": "Day 7",
+        "price": 106
+      },
+      {
+        "date": "Day 8",
+        "price": 107
+      },
+      {
+        "date": "Day 9",
+        "price": 108
+      },
+      {
+        "date": "Day 10",
+        "price": 109
+      },
+      {
+        "date": "Day 11",
+        "price": 110
+      },
+      {
+        "date": "Day 12",
+        "price": 111
+      },
+      {
+        "date": "Day 13",
+        "price": 112
+      },
+      {
+        "date": "Day 14",
+        "price": 113
+      },
+      {
+        "date": "Day 15",
+        "price": 114
+      },
+      {
+        "date": "Day 16",
+        "price": 115
+      },
+      {
+        "date": "Day 17",
+        "price": 116
+      },
+      {
+        "date": "Day 18",
+        "price": 117
+      },
+      {
+        "date": "Day 19",
+        "price": 118
+      },
+      {
+        "date": "Day 20",
+        "price": 119
+      },
+      {
+        "date": "Day 21",
+        "price": 120
+      },
+      {
+        "date": "Day 22",
+        "price": 121
+      },
+      {
+        "date": "Day 23",
+        "price": 122
+      },
+      {
+        "date": "Day 24",
+        "price": 123
+      },
+      {
+        "date": "Day 25",
+        "price": 124
+      },
+      {
+        "date": "Day 26",
+        "price": 125
+      },
+      {
+        "date": "Day 27",
+        "price": 126
+      },
+      {
+        "date": "Day 28",
+        "price": 127
+      },
+      {
+        "date": "Day 29",
+        "price": 128
+      },
+      {
+        "date": "Day 30",
+        "price": 129
+      }
+    ],
+    "agents": {
+      "technical": {
+        "rsi": 48,
+        "macd": "Bearish (below signal)",
+        "bollinger": "Price near lower band (potential reversal)",
+        "verdict": "Weak setup \u2014 bearish pressure building"
+      },
+      "fundamental": {
+        "revenue": "Sector: Diversified FMCG",
+        "profit": "PE: 18.13",
+        "highlight": "52W Range: \u20b9288.75 \u2014 \u20b9444.2 | Sector PE: 17.93",
+        "verdict": "Decent fundamentals \u2014 Overvalued"
+      },
+      "insider": {
+        "recent": "No major bulk/block deals",
+        "holding": "Delivery: 64.2%",
+        "pledge": "N/A",
+        "verdict": "Moderate institutional activity"
+      },
+      "sentiment": {
+        "articles": 9,
+        "score": 0.56,
+        "theme": "Against all odds: What global markets can learn from Bill Ac",
+        "verdict": "Generally positive sentiment (56% positive)"
+      },
+      "fusion": {
+        "convergence": "Mixed signals \u2014 1 bullish, 1 bearish, 2 neutral",
+        "backtest": "Mixed pattern \u2014 50/50 historically",
+        "confidence": 54,
+        "verdict": "HOLD \u2014 Mixed signals, wait for clearer direction"
+      }
+    },
+    "backtest": [
+      {
+        "days": 30,
+        "return": 5
+      },
+      {
+        "days": 60,
+        "return": 8
+      },
+      {
+        "days": 90,
+        "return": 12
+      }
+    ],
+    "successRate": 58
+  },
+  "TATAMOTORS": {
+    "symbol": "TATAMOTORS",
+    "name": "Tata Motors",
+    "price": 0.0,
+    "change": 0.0,
+    "score": 48,
+    "chartData": [
+      {
+        "date": "Day 1",
+        "price": 100
+      },
+      {
+        "date": "Day 2",
+        "price": 101
+      },
+      {
+        "date": "Day 3",
+        "price": 102
+      },
+      {
+        "date": "Day 4",
+        "price": 103
+      },
+      {
+        "date": "Day 5",
+        "price": 104
+      },
+      {
+        "date": "Day 6",
+        "price": 105
+      },
+      {
+        "date": "Day 7",
+        "price": 106
+      },
+      {
+        "date": "Day 8",
+        "price": 107
+      },
+      {
+        "date": "Day 9",
+        "price": 108
+      },
+      {
+        "date": "Day 10",
+        "price": 109
+      },
+      {
+        "date": "Day 11",
+        "price": 110
+      },
+      {
+        "date": "Day 12",
+        "price": 111
+      },
+      {
+        "date": "Day 13",
+        "price": 112
+      },
+      {
+        "date": "Day 14",
+        "price": 113
+      },
+      {
+        "date": "Day 15",
+        "price": 114
+      },
+      {
+        "date": "Day 16",
+        "price": 115
+      },
+      {
+        "date": "Day 17",
+        "price": 116
+      },
+      {
+        "date": "Day 18",
+        "price": 117
+      },
+      {
+        "date": "Day 19",
+        "price": 118
+      },
+      {
+        "date": "Day 20",
+        "price": 119
+      },
+      {
+        "date": "Day 21",
+        "price": 120
+      },
+      {
+        "date": "Day 22",
+        "price": 121
+      },
+      {
+        "date": "Day 23",
+        "price": 122
+      },
+      {
+        "date": "Day 24",
+        "price": 123
+      },
+      {
+        "date": "Day 25",
+        "price": 124
+      },
+      {
+        "date": "Day 26",
+        "price": 125
+      },
+      {
+        "date": "Day 27",
+        "price": 126
+      },
+      {
+        "date": "Day 28",
+        "price": 127
+      },
+      {
+        "date": "Day 29",
+        "price": 128
+      },
+      {
+        "date": "Day 30",
+        "price": 129
+      }
+    ],
+    "agents": {
+      "technical": {
+        "rsi": 48,
+        "macd": "Bearish (below signal)",
+        "bollinger": "Price within bands (normal range)",
+        "verdict": "Weak setup \u2014 bearish pressure building"
+      },
+      "fundamental": {
+        "revenue": "Sector: N/A",
+        "profit": "PE: 0",
+        "highlight": "52W Range: N/A | Sector PE: 0",
+        "verdict": "Mixed fundamentals \u2014 needs deeper analysis"
+      },
+      "insider": {
+        "recent": "No major bulk/block deals",
+        "holding": "N/A",
+        "pledge": "N/A",
+        "verdict": "Normal activity \u2014 no significant signals"
+      },
+      "sentiment": {
+        "articles": 5,
+        "score": 0.5,
+        "theme": "2026 Tata Punch EV Facelift Launch Highlights: Price, Range,",
+        "verdict": "Mixed media sentiment (50% positive)"
+      },
+      "fusion": {
+        "convergence": "Mixed signals \u2014 0 bullish, 1 bearish, 3 neutral",
+        "backtest": "Mixed pattern \u2014 50/50 historically",
+        "confidence": 48,
+        "verdict": "HOLD \u2014 Mixed signals, wait for clearer direction"
+      }
+    },
+    "backtest": [
+      {
+        "days": 30,
+        "return": 0
+      },
+      {
+        "days": 60,
+        "return": 2
+      },
+      {
+        "days": 90,
+        "return": 4
+      }
+    ],
+    "successRate": 48
+  }
+}

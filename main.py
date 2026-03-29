@@ -1,6 +1,6 @@
 """
 Opportunity Radar — FastAPI Backend
-Pre-caches signals on startup for instant Dashboard loading.
+Pre-caches signals on startup. Falls back to static JSON when NSE blocks (403).
 """
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -13,30 +13,69 @@ from contextlib import asynccontextmanager
 import threading
 import logging
 import time
+import json
+import os
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(name)s] %(message)s")
 logger = logging.getLogger("opportunity-radar")
 
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+
 # ─── Pre-cached signals store ───
 _cached_signals = []
+_cached_stocks = {}
+_cached_market = []
 _cache_lock = threading.Lock()
 _cache_ready = threading.Event()
+
+
+def _load_static_cache():
+    """Load pre-built JSON cache (for Render where NSE blocks)."""
+    global _cached_signals, _cached_stocks, _cached_market
+    try:
+        p = os.path.join(DATA_DIR, "cached_signals.json")
+        if os.path.exists(p):
+            with open(p) as f:
+                _cached_signals = json.load(f)
+            logger.info(f"Loaded {len(_cached_signals)} static signals")
+    except Exception as e:
+        logger.error(f"Static signals load error: {e}")
+
+    try:
+        p = os.path.join(DATA_DIR, "cached_stocks.json")
+        if os.path.exists(p):
+            with open(p) as f:
+                _cached_stocks = json.load(f)
+            logger.info(f"Loaded {len(_cached_stocks)} static stocks")
+    except Exception as e:
+        logger.error(f"Static stocks load error: {e}")
+
+    try:
+        p = os.path.join(DATA_DIR, "cached_market.json")
+        if os.path.exists(p):
+            with open(p) as f:
+                _cached_market = json.load(f)
+            logger.info(f"Loaded {len(_cached_market)} static indices")
+    except Exception as e:
+        logger.error(f"Static market load error: {e}")
 
 
 def _background_scan():
     """Scan watchlist in background thread, cache results."""
     global _cached_signals
-    logger.info("🔄 Background scan starting...")
+    logger.info("Background scan starting...")
     try:
         results = scan_watchlist(limit=6)
         signals = [_to_signal(r) for r in results]
-        with _cache_lock:
-            _cached_signals = signals
-        _cache_ready.set()
-        logger.info(f"✅ Cached {len(signals)} signals")
+        if signals and any(s.get("score", 0) > 0 for s in signals):
+            with _cache_lock:
+                _cached_signals = signals
+            logger.info(f"Cached {len(signals)} live signals")
+        else:
+            logger.info("Live scan returned empty, keeping static cache")
     except Exception as e:
         logger.error(f"Background scan error: {e}")
-        _cache_ready.set()  # Unblock even on error
+    _cache_ready.set()
 
 
 def _periodic_scan():
@@ -48,10 +87,12 @@ def _periodic_scan():
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Start background scanner on app startup."""
+    """Load static cache immediately, then try live scan in background."""
+    _load_static_cache()
+    _cache_ready.set()  # Unblock immediately with static data
     t = threading.Thread(target=_periodic_scan, daemon=True)
     t.start()
-    logger.info("🚀 Background scanner started")
+    logger.info("Backend ready (static cache loaded, live scanner started)")
     yield
 
 
@@ -169,9 +210,8 @@ async def health_check():
 
 @app.get("/api/signals")
 async def get_signals():
-    """Get signals — served instantly from pre-cache."""
-    # Wait max 45s for first scan to complete
-    _cache_ready.wait(timeout=45)
+    """Get signals — served from pre-cache (static or live)."""
+    _cache_ready.wait(timeout=5)
     with _cache_lock:
         return _cached_signals
 
@@ -180,22 +220,38 @@ async def get_signals():
 async def get_stock_analysis(symbol: str):
     """Full multi-agent analysis for a single stock."""
     logger.info(f"Full analysis for {symbol}...")
+
+    # Check static cache first
+    if symbol in _cached_stocks:
+        logger.info(f"Serving {symbol} from static cache")
+        return _cached_stocks[symbol]
+
+    # Try live analysis
     try:
         analysis = analyze_stock_full(symbol)
-        return _to_stock_analysis(analysis)
+        if analysis and analysis.get("price", 0) > 0:
+            return _to_stock_analysis(analysis)
     except Exception as e:
-        logger.error(f"Stock analysis error: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Live analysis error: {e}")
+
+    # Last resort
+    raise HTTPException(status_code=404, detail=f"No data for {symbol}")
 
 
 @app.get("/api/market-overview")
 async def get_market_overview():
     """Get NIFTY 50, SENSEX, BANK NIFTY data."""
     try:
-        return fetch_market_overview()
+        live = fetch_market_overview()
+        if live:
+            return live
     except Exception as e:
-        logger.error(f"Market overview error: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Live market overview error: {e}")
+
+    # Fallback to static
+    if _cached_market:
+        return _cached_market
+    return []
 
 
 @app.post("/api/chat")

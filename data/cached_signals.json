@@ -1,0 +1,152 @@
+[
+  {
+    "symbol": "TCS",
+    "name": "TCS",
+    "score": 61,
+    "type": "HOLD",
+    "potential": "+5-10% in 45 days",
+    "agents": [
+      {
+        "icon": "\ud83d\udcca",
+        "label": "Technical: MACD Bullish"
+      },
+      {
+        "icon": "\ud83d\udcd1",
+        "label": "Filing: Overvalued (PE 18.03)"
+      },
+      {
+        "icon": "\ud83d\udd0d",
+        "label": "Insider: 48.8% Delivery"
+      },
+      {
+        "icon": "\ud83d\udcf0",
+        "label": "Sentiment: 60% Positive"
+      }
+    ]
+  },
+  {
+    "symbol": "HDFCBANK",
+    "name": "HDFC Bank",
+    "score": 54,
+    "type": "HOLD",
+    "potential": "Flat \u2014 wait for confirmation",
+    "agents": [
+      {
+        "icon": "\ud83d\udcca",
+        "label": "Technical: RSI Oversold (28)"
+      },
+      {
+        "icon": "\ud83d\udcd1",
+        "label": "Filing: Overvalued (PE 15.27)"
+      },
+      {
+        "icon": "\ud83d\udd0d",
+        "label": "Insider: 64.03% Delivery"
+      },
+      {
+        "icon": "\ud83d\udcf0",
+        "label": "Sentiment: 65% Negative"
+      }
+    ]
+  },
+  {
+    "symbol": "RELIANCE",
+    "name": "Reliance Industries",
+    "score": 54,
+    "type": "HOLD",
+    "potential": "Flat \u2014 wait for confirmation",
+    "agents": [
+      {
+        "icon": "\ud83d\udcca",
+        "label": "Technical: RSI Oversold (28)"
+      },
+      {
+        "icon": "\ud83d\udcd1",
+        "label": "Filing: Overvalued (PE 18.72)"
+      },
+      {
+        "icon": "\ud83d\udd0d",
+        "label": "Insider: 54.05% Delivery"
+      },
+      {
+        "icon": "\ud83d\udcf0",
+        "label": "Sentiment: 56% Mixed"
+      }
+    ]
+  },
+  {
+    "symbol": "INFY",
+    "name": "Infosys",
+    "score": 54,
+    "type": "HOLD",
+    "potential": "Flat \u2014 wait for confirmation",
+    "agents": [
+      {
+        "icon": "\ud83d\udcca",
+        "label": "Technical: RSI 48"
+      },
+      {
+        "icon": "\ud83d\udcd1",
+        "label": "Filing: Overvalued (PE 18.39)"
+      },
+      {
+        "icon": "\ud83d\udd0d",
+        "label": "Insider: 50.82% Delivery"
+      },
+      {
+        "icon": "\ud83d\udcf0",
+        "label": "Sentiment: 70% Positive"
+      }
+    ]
+  },
+  {
+    "symbol": "ITC",
+    "name": "ITC Limited",
+    "score": 54,
+    "type": "HOLD",
+    "potential": "Flat \u2014 wait for confirmation",
+    "agents": [
+      {
+        "icon": "\ud83d\udcca",
+        "label": "Technical: RSI 48"
+      },
+      {
+        "icon": "\ud83d\udcd1",
+        "label": "Filing: Overvalued (PE 18.13)"
+      },
+      {
+        "icon": "\ud83d\udd0d",
+        "label": "Insider: 64.2% Delivery"
+      },
+      {
+        "icon": "\ud83d\udcf0",
+        "label": "Sentiment: 56% Mixed"
+      }
+    ]
+  },
+  {
+    "symbol": "TATAMOTORS",
+    "name": "Tata Motors",
+    "score": 48,
+    "type": "HOLD",
+    "potential": "Flat \u2014 wait for confirmation",
+    "agents": [
+      {
+        "icon": "\ud83d\udcca",
+        "label": "Technical: RSI 48"
+      },
+      {
+        "icon": "\ud83d\udcd1",
+        "label": "Filing: PE 0"
+      },
+      {
+        "icon": "\ud83d\udd0d",
+        "label": "Insider: No major activity"
+      },
+      {
+        "icon": "\ud83d\udcf0",
+        "label": "Sentiment: 50% Mixed"
+      }
+    ]
+  }
+]
