@@ -85,14 +85,35 @@ def _periodic_scan():
         time.sleep(300)
 
 
+def _keep_alive_ping():
+    """Ping self every minute so Render doesn't sleep."""
+    import urllib.request
+    while True:
+        try:
+            time.sleep(60)
+            port = os.environ.get("PORT", "8000")
+            url = f"http://127.0.0.1:{port}/api/health"
+            urllib.request.urlopen(url, timeout=5)
+            logger.debug("Keep-alive self-ping successful")
+        except Exception as e:
+            logger.debug(f"Keep-alive ping failed: {e}")
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Load static cache immediately, then try live scan in background."""
     _load_static_cache()
     _cache_ready.set()  # Unblock immediately with static data
-    t = threading.Thread(target=_periodic_scan, daemon=True)
-    t.start()
-    logger.info("Backend ready (static cache loaded, live scanner started)")
+    
+    # Start background live scanner
+    t_scan = threading.Thread(target=_periodic_scan, daemon=True)
+    t_scan.start()
+    
+    # Start Render keep-alive pinger
+    t_ping = threading.Thread(target=_keep_alive_ping, daemon=True)
+    t_ping.start()
+    
+    logger.info("Backend ready (static cache loaded, live scanner & keep-alive started)")
     yield
 
 
